@@ -1,0 +1,81 @@
+unit formulario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm3 = class(TForm)
+    background: TPanel;
+    nomeTLabel: TLabel;
+    nomeTEdit: TEdit;
+    sobrenomeTEdit: TEdit;
+    sobrenomeTLabel: TLabel;
+    dataDeNascimentoTEdit: TEdit;
+    dataDeNascimentoTLabel: TLabel;
+    NacionalidadeTEdit: TEdit;
+    nacionalidadeTLabel: TLabel;
+    emailTEdit: TEdit;
+    emailTLabel: TLabel;
+    telefoneTEdit: TEdit;
+    telefoneTLabel: TLabel;
+    nomeDoUsuarioTEdit: TEdit;
+    nomeDoUsuarioTLabel: TLabel;
+    enderecoTLabel: TLabel;
+    enderecoTEdit: TEdit;
+    informacoesButton: TButton;
+    salvarButton: TButton;
+    procedure salvarButtonClick(Sender: TObject);
+    procedure informacoesButtonClick(Sender: TObject);
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+  nome,sobrenome,nacionalidade,email,nomeDoUsuario,endereco:String;
+  dataDeNascimento,telefone,i:integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm3.salvarButtonClick(Sender: TObject);
+begin
+   nome := nomeTEdit.Text;
+   sobrenome := sobrenomeTEdit.Text;
+   dataDeNascimento := StrToInt(dataDeNascimentoTEdit.Text);
+   nacionalidade := NacionalidadeTEdit.Text;
+   email := emailTEdit.Text;
+   telefone := StrToInt(telefoneTEdit.Text);
+   nomeDoUsuario := nomeDoUsuarioTEdit.Text;
+   endereco := enderecoTEdit.Text;
+
+   //limpar todos TEdit
+   For i := 0 To ComponentCount -1 Do
+    If Components[i] Is TEdit Then
+     Begin
+       TEdit(Components[i]).Text := '';
+     End;
+end;
+
+procedure TForm3.informacoesButtonClick(Sender: TObject);
+begin
+   nomeTEdit.Text := nome;
+   sobrenomeTEdit.Text := sobrenome;
+   dataDeNascimentoTEdit.Text := IntToStr(dataDeNascimento);
+   NacionalidadeTEdit.Text := nacionalidade;
+   emailTEdit.Text := email ;
+   telefoneTEdit.Text := IntToStr(telefone);
+   nomeDoUsuarioTEdit.Text :=  nomeDoUsuario;
+   enderecoTEdit.Text := endereco;
+
+end;
+
+end.

@@ -1,0 +1,66 @@
+unit consulta;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    background: TPanel;
+    nomeTLabel: TLabel;
+    nomeTEdit: TEdit;
+    enderecoTEdit: TEdit;
+    enderecoTLabel: TLabel;
+    telefoneTEdit: TEdit;
+    telefoneTLabel: TLabel;
+    dadosDoClienteTLabel: TLabel;
+    pedidosTLabel: TLabel;
+    calabresaTCheckBox: TCheckBox;
+    frangoCatupiryTCheckbox: TCheckBox;
+    portuguesaTCheckBox: TCheckBox;
+    mussarelaTCheckBox: TCheckBox;
+    saboresTLabel: TLabel;
+    brotoTCheckBox: TCheckBox;
+    normalTCheckBox: TCheckBox;
+    tamanhoTLabel: TLabel;
+    recheadaTCheckBox: TCheckBox;
+    bordaTLabel: TLabel;
+    CheckBox1: TCheckBox;
+    procurarButton: TButton;
+    Button1: TButton;
+    procedure procurarButtonClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses formulario, calc;
+
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  calculadora1 := Tcalculadora1.Create(self);
+  calculadora1.Show;
+end;
+
+procedure TForm1.procurarButtonClick(Sender: TObject);
+begin
+
+
+   nomeTEdit.Text := Cadastro.nomeDoCliente;
+   telefoneTEdit.Text := Cadastro.telefoneDoCliente;
+   enderecoTEdit.Text := Cadastro.endereco;
+end;
+
+end.

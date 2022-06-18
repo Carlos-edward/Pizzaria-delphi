@@ -1,0 +1,71 @@
+unit Formulario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TCadastro = class(TForm)
+    background: TPanel;
+    nomeTLabel: TLabel;
+    nomeTEdit: TEdit;
+    telefoneTEdit: TEdit;
+    telefoneTLabel: TLabel;
+    enderecoTLabel: TLabel;
+    enderecoTEdit: TEdit;
+    confirmarButton: TButton;
+    calabresaTCheckBox: TCheckBox;
+    mussarelaTCheckBox: TCheckBox;
+    portuguesaTCheckBox: TCheckBox;
+    frangoCatupiryTCheckbox: TCheckBox;
+    saboresTLabel: TLabel;
+    tamanhoTLabel: TLabel;
+    brotoTCheckBox: TCheckBox;
+    normalTCheckBox: TCheckBox;
+    CheckBox1: TCheckBox;
+    recheadaTCheckBox: TCheckBox;
+    bordaTLabel: TLabel;
+    procedure confirmarButtonClick(Sender: TObject);
+    procedure informacoesButtonClick(Sender: TObject);
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+     nomeDoCliente,endereco:String;
+     telefoneDoCliente:integer;
+  end;
+
+var
+  Cadastro: TCadastro;
+  i:integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TCadastro.confirmarButtonClick(Sender: TObject);
+begin
+   nomeDoCliente := nomeTEdit.Text;
+   telefoneDoCliente := StrToInt(telefoneTEdit.Text);
+   endereco := enderecoTEdit.Text;
+
+   //limpar todos TEdit
+   For i := 0 To ComponentCount -1 Do
+    If Components[i] Is TEdit Then
+     Begin
+       TEdit(Components[i]).Text := '';
+     End;
+end;
+
+procedure TCadastro.informacoesButtonClick(Sender: TObject);
+begin
+   nomeTEdit.Text := nomeDoCliente;
+   telefoneTEdit.Text := IntToStr(telefoneDoCliente);
+   enderecoTEdit.Text := endereco;
+end;
+
+end.

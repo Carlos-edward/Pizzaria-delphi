@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/05/13 09:27:55.000.151,=C:\Users\IdeaPad\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/05/13 12:48:23.000.884,C:\Users\IdeaPad\Documents\Embarcadero\Studio\Projects\Unit3.pas=C:\Users\IdeaPad\Downloads\CADU\Emabacadero\Formulário\formulario.pas</Transaction>
+    <Transaction>2022/05/13 12:48:23.000.884,C:\Users\IdeaPad\Documents\Embarcadero\Studio\Projects\Unit3.dfm=C:\Users\IdeaPad\Downloads\CADU\Emabacadero\Formulário\formulario.dfm</Transaction>
+    <Transaction>2022/05/13 12:48:30.000.361,C:\Users\IdeaPad\Documents\Embarcadero\Studio\Projects\Project3.dproj=C:\Users\IdeaPad\Downloads\CADU\Emabacadero\Formulário\form.dproj</Transaction>
+    <Transaction>2022/05/14 10:09:38.000.565,=C:\Users\Alunos\Documents\Pizzaria\Unit1.pas</Transaction>
+    <Transaction>2022/05/14 10:09:49.000.344,C:\Users\Alunos\Documents\Pizzaria\Unit1.dfm=C:\Users\Alunos\Documents\Pizzaria\consulta.dfm</Transaction>
+    <Transaction>2022/05/14 10:09:49.000.344,C:\Users\Alunos\Documents\Pizzaria\Unit1.pas=C:\Users\Alunos\Documents\Pizzaria\consulta.pas</Transaction>
+    <Transaction>2022/05/14 10:28:38.000.065,=C:\Users\Alunos\Documents\Calculadora\calc.pas</Transaction>
+    <Transaction>2022/05/14 12:42:58.000.108,C:\Users\Alunos\Documents\Pizzaria\form.dproj=C:\Users\Alunos\Documents\Pizzaria\form.dproj</Transaction>
+    <Transaction>2022/05/21 09:09:51.565,=C:\Users\Alunos\Downloads\Pizzaria\Unit2.pas</Transaction>
+    <Transaction>2022/05/21 09:11:06.281,C:\Users\Alunos\Downloads\Pizzaria\calc.dfm=C:\Users\Alunos\Downloads\Pizzaria\Unit2.dfm</Transaction>
+    <Transaction>2022/05/21 09:11:06.281,C:\Users\Alunos\Downloads\Pizzaria\calc.pas=C:\Users\Alunos\Downloads\Pizzaria\Unit2.pas</Transaction>
+    <Transaction>2022/05/21 09:39:49.118,C:\Users\Alunos\Downloads\Pizzaria\form.dproj=C:\Users\Alunos\Downloads\Pizzaria\form.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

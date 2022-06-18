@@ -1,0 +1,189 @@
+object Cadastro: TCadastro
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro'
+  ClientHeight = 227
+  ClientWidth = 542
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object background: TPanel
+    Left = 0
+    Top = -5
+    Width = 545
+    Height = 230
+    Color = clHighlightText
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 0
+    object nomeTLabel: TLabel
+      Left = 24
+      Top = 16
+      Width = 75
+      Height = 13
+      Caption = 'Nome Completo'
+    end
+    object telefoneTLabel: TLabel
+      Left = 344
+      Top = 16
+      Width = 42
+      Height = 13
+      Caption = 'Telefone'
+    end
+    object enderecoTLabel: TLabel
+      Left = 200
+      Top = 16
+      Width = 45
+      Height = 13
+      Caption = 'Endere'#231'o'
+    end
+    object saboresTLabel: TLabel
+      Left = 24
+      Top = 70
+      Width = 65
+      Height = 23
+      AutoSize = False
+      Caption = 'Sabores :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object tamanhoTLabel: TLabel
+      Left = 160
+      Top = 70
+      Width = 65
+      Height = 23
+      AutoSize = False
+      Caption = 'Tamanho :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object bordaTLabel: TLabel
+      Left = 248
+      Top = 70
+      Width = 65
+      Height = 23
+      AutoSize = False
+      Caption = 'Borda :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object nomeTEdit: TEdit
+      Left = 24
+      Top = 35
+      Width = 137
+      Height = 21
+      TabOrder = 0
+    end
+    object telefoneTEdit: TEdit
+      Left = 344
+      Top = 35
+      Width = 113
+      Height = 21
+      TabOrder = 1
+    end
+    object enderecoTEdit: TEdit
+      Left = 200
+      Top = 35
+      Width = 113
+      Height = 21
+      TabOrder = 2
+    end
+    object confirmarButton: TButton
+      Left = 440
+      Top = 178
+      Width = 75
+      Height = 25
+      Caption = 'Confirmar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+      OnClick = confirmarButtonClick
+    end
+    object calabresaTCheckBox: TCheckBox
+      Left = 24
+      Top = 95
+      Width = 97
+      Height = 17
+      Caption = 'Calabresa'
+      TabOrder = 4
+    end
+    object mussarelaTCheckBox: TCheckBox
+      Left = 24
+      Top = 119
+      Width = 97
+      Height = 17
+      Caption = 'Mussarela'
+      TabOrder = 5
+    end
+    object portuguesaTCheckBox: TCheckBox
+      Left = 24
+      Top = 142
+      Width = 97
+      Height = 17
+      Caption = 'Portuguesa'
+      TabOrder = 6
+    end
+    object frangoCatupiryTCheckbox: TCheckBox
+      Left = 24
+      Top = 165
+      Width = 121
+      Height = 17
+      Caption = 'Frango e Catupiry'
+      TabOrder = 7
+    end
+    object brotoTCheckBox: TCheckBox
+      Left = 160
+      Top = 119
+      Width = 97
+      Height = 17
+      Caption = 'Broto'
+      TabOrder = 8
+    end
+    object normalTCheckBox: TCheckBox
+      Left = 160
+      Top = 95
+      Width = 97
+      Height = 17
+      Caption = 'Normal'
+      TabOrder = 9
+    end
+    object CheckBox1: TCheckBox
+      Left = 248
+      Top = 119
+      Width = 97
+      Height = 17
+      Caption = 'Recheada'
+      TabOrder = 10
+    end
+    object recheadaTCheckBox: TCheckBox
+      Left = 248
+      Top = 96
+      Width = 97
+      Height = 17
+      Caption = 'Normal'
+      TabOrder = 11
+    end
+  end
+end

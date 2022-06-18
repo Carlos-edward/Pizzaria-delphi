@@ -1,0 +1,18 @@
+program form;
+
+uses
+  Vcl.Forms,
+  formulario in 'formulario.pas' {Cadastro},
+  consulta in 'consulta.pas' {Form1},
+  calc in '..\Calculadora\calc.pas' {calculadora1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TCadastro, Cadastro);
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(Tcalculadora1, calculadora1);
+  Application.Run;
+end.

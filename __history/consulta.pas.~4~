@@ -1,0 +1,55 @@
+unit consulta;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    background: TPanel;
+    nomeTLabel: TLabel;
+    nomeTEdit: TEdit;
+    enderecoTEdit: TEdit;
+    enderecoTLabel: TLabel;
+    telefoneTEdit: TEdit;
+    telefoneTLabel: TLabel;
+    dadosDoClienteTLabel: TLabel;
+    pedidosTLabel: TLabel;
+    calabresaTCheckBox: TCheckBox;
+    frangoCatupiryTCheckbox: TCheckBox;
+    portuguesaTCheckBox: TCheckBox;
+    mussarelaTCheckBox: TCheckBox;
+    saboresTLabel: TLabel;
+    brotoTCheckBox: TCheckBox;
+    normalTCheckBox: TCheckBox;
+    tamanhoTLabel: TLabel;
+    recheadaTCheckBox: TCheckBox;
+    bordaTLabel: TLabel;
+    CheckBox1: TCheckBox;
+    procurarButton: TButton;
+    procedure procurarButtonClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+     var nomeDoCliente,endereco:String;
+     var telefoneDoCliente:double;
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.procurarButtonClick(Sender: TObject);
+begin
+
+   nomeTEdit.Text := nomeDoCliente;
+   telefoneTEdit.Text := floatToStr(telefoneDoCliente);
+   enderecoTEdit.Text := endereco;
+end;
+
+end.

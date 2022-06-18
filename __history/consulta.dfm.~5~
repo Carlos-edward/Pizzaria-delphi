@@ -1,0 +1,242 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Consulta de pedidos'
+  ClientHeight = 421
+  ClientWidth = 303
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object background: TPanel
+    Left = 0
+    Top = 0
+    Width = 307
+    Height = 425
+    Color = clBtnHighlight
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 0
+    object nomeTLabel: TLabel
+      Left = 16
+      Top = 60
+      Width = 75
+      Height = 13
+      Caption = 'Nome Completo'
+    end
+    object enderecoTLabel: TLabel
+      Left = 163
+      Top = 60
+      Width = 45
+      Height = 13
+      Caption = 'Endere'#231'o'
+    end
+    object telefoneTLabel: TLabel
+      Left = 16
+      Top = 112
+      Width = 42
+      Height = 13
+      Caption = 'Telefone'
+    end
+    object dadosDoClienteTLabel: TLabel
+      Left = 40
+      Top = 8
+      Width = 228
+      Height = 33
+      Caption = 'Dados do Cliente'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object pedidosTLabel: TLabel
+      Left = 96
+      Top = 174
+      Width = 93
+      Height = 33
+      Caption = 'Pedido'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object saboresTLabel: TLabel
+      Left = 16
+      Top = 214
+      Width = 65
+      Height = 23
+      AutoSize = False
+      Caption = 'Sabores :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object tamanhoTLabel: TLabel
+      Left = 171
+      Top = 214
+      Width = 65
+      Height = 23
+      AutoSize = False
+      Caption = 'Tamanho :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object bordaTLabel: TLabel
+      Left = 16
+      Top = 332
+      Width = 65
+      Height = 23
+      AutoSize = False
+      Caption = 'Borda :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object totalLabel: TLabel
+      Left = 171
+      Top = 378
+      Width = 47
+      Height = 18
+      Caption = 'Total :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object nomeTEdit: TEdit
+      Left = 16
+      Top = 79
+      Width = 113
+      Height = 21
+      Enabled = False
+      TabOrder = 0
+    end
+    object enderecoTEdit: TEdit
+      Left = 163
+      Top = 79
+      Width = 113
+      Height = 21
+      Enabled = False
+      TabOrder = 1
+    end
+    object telefoneTEdit: TEdit
+      Left = 16
+      Top = 131
+      Width = 113
+      Height = 21
+      Enabled = False
+      TabOrder = 2
+    end
+    object calabresaTCheckBox: TCheckBox
+      Left = 16
+      Top = 239
+      Width = 137
+      Height = 17
+      Caption = 'Calabresa   -  R$40,00'
+      Enabled = False
+      TabOrder = 3
+    end
+    object frangoCatupiryTCheckbox: TCheckBox
+      Left = 16
+      Top = 309
+      Width = 161
+      Height = 17
+      Caption = 'Frango/Catupiry - R$41,00'
+      Enabled = False
+      TabOrder = 4
+    end
+    object portuguesaTCheckBox: TCheckBox
+      Left = 16
+      Top = 286
+      Width = 137
+      Height = 17
+      Caption = 'Portuguesa -  R$42,00 '
+      Enabled = False
+      TabOrder = 5
+    end
+    object mussarelaTCheckBox: TCheckBox
+      Left = 16
+      Top = 263
+      Width = 137
+      Height = 17
+      Caption = 'Mussarela   -  R$38,00'
+      Enabled = False
+      TabOrder = 6
+    end
+    object brotoTCheckBox: TCheckBox
+      Left = 171
+      Top = 263
+      Width = 97
+      Height = 17
+      Caption = 'Broto'
+      Enabled = False
+      TabOrder = 7
+    end
+    object tamanhoNormalTCheckBox: TCheckBox
+      Left = 171
+      Top = 239
+      Width = 97
+      Height = 17
+      Caption = 'Normal'
+      Enabled = False
+      TabOrder = 8
+    end
+    object bordaNormalTCheckBox: TCheckBox
+      Left = 16
+      Top = 358
+      Width = 97
+      Height = 17
+      Caption = 'Normal'
+      Enabled = False
+      TabOrder = 9
+    end
+    object recheadaTCheckBox: TCheckBox
+      Left = 16
+      Top = 381
+      Width = 137
+      Height = 17
+      Caption = 'Recheada  - R$5,00'
+      Enabled = False
+      TabOrder = 10
+    end
+    object procurarButton: TButton
+      Left = 161
+      Top = 129
+      Width = 56
+      Height = 25
+      Caption = 'Procurar'
+      TabOrder = 11
+      OnClick = procurarButtonClick
+    end
+    object Button1: TButton
+      Left = 232
+      Top = 129
+      Width = 65
+      Height = 25
+      Caption = 'calculadora'
+      TabOrder = 12
+      OnClick = Button1Click
+    end
+  end
+end
